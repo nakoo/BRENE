@@ -1,13 +1,12 @@
 # shellcheck disable=SC2034
 # shellcheck disable=SC2148
 config_paths_hiding__data_local_tmp=1
-config_paths_hiding__non_standard_sdcard=1
+config_paths_hiding__non_standard_sdcard=0
 config_paths_hiding__non_standard_sdcard_android=1
 
 config_selinux=1
 config_su_compat=1
 config_spoof_uname=1
-config_spoof_hosts=1
 config_selinux_hide=1
 config_kernel_umount=1
 config_hide_custom_recovery=1
@@ -27,6 +26,7 @@ config_rom_props=0
 config_saturation=0
 config_brene_logs=0
 config_enable_log=0
+config_spoof_hosts=0
 config_hide_addon_d=0
 config_usb_debugging=0
 config_show_refresh_rate=0
