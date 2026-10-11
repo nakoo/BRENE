@@ -287,7 +287,7 @@
 
 					<div class="card-row">
 						<div class="card-row__body">
-							<span class="card-row__title">Hide Non-standard /storage/emulated/0 Paths</span>
+							<span class="card-row__title">Hide Non-standard /sdcard Paths</span>
 							<span class="card-row__sub">Standard Paths:</span>
 							<span class="card-row__sub">
 								Alarms, Android, Audiobooks, DCIM, Documents, Download, Movies, Music, Notifications, Pictures, Podcasts, Recordings, Ringtones, (MIUI)
@@ -299,7 +299,7 @@
 
 					<div class="card-row">
 						<div class="card-row__body">
-							<span class="card-row__title">Hide Non-standard /storage/emulated/0/Android Paths</span>
+							<span class="card-row__title">Hide Non-standard /sdcard/Android Paths</span>
 							<span class="card-row__sub"> Standard Paths: </span>
 							<span class="card-row__sub">data, media, obb</span>
 						</div>
@@ -539,7 +539,7 @@
 							<span class="card-row__sub">Also it does not check if the path is existed or not, instead it checks for empty string only, so be careful what to add</span>
 							<span class="card-row__sub">For paths that are frequently modified, we can add them via 'add_sus_path_loop'</span>
 							<span class="card-row__tag--code">Example:</span>
-							<span class="card-row__tag--code">/storage/emulated/0/TWRP</span>
+							<span class="card-row__tag--code">/sdcard/TWRP</span>
 							<span class="card-row__tag--code">/data/local/tmp/main.jar</span>
 							<!-- SUS PATH LOOP -->
 
@@ -556,6 +556,8 @@
 							<span class="card-row__sub">- Both target_pathname and redirected_pathname must be existed before they can be added to open_redirect</span>
 							<span class="card-row__sub">- Users have to take care of the selinux permission of both target_pathname and redirected_pathname by themselves</span>
 							<span class="card-row__sub">- Only effective for current process that matches the pre-defined uid scheme</span>
+							<span class="card-row__tag--code">Example:</span>
+							<span class="card-row__tag--code">/system/etc/hosts /data/local/tmp/hosts 3</span>
 							<!-- OPEN_REDIRECT -->
 						</div>
 						<md-ripple></md-ripple>
