@@ -224,7 +224,6 @@ if [[ "${config_spoof_hosts}" == "1" ]]; then
 	file_name=$(basename "${path}")
 	fake_file_path="${PERSISTENT_DIR}/fake_files/${file_name}"
 
-	[[ ! -d "${PERSISTENT_DIR}/fake_files" ]] && mkdir -p "${PERSISTENT_DIR}/fake_files"
 	[[ ! -f "${fake_file_path}" ]] && {
 		cat <<- EOF > "${fake_file_path}"
 			127.0.0.1       localhost
